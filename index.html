@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/1d47f7a9f5.js" crossorigin="anonymous"></script>
+    <!-- Main CSS file -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Vue Slider</title>
+</head>
+
+<body>
+    <div id="app">
+        <div class="prev" @click="showPrev"><i class="fas fa-chevron-left"></i></div>
+        <img :src="images[counter]" alt="">
+        <div class="next" @click="showNext"><i class="fas fa-chevron-right"></i></div>
+    </div>
+
+
+
+    <!-- VueJS -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <!-- Main JS file -->
+    <script src="./main.js"></script>
+</body>
+
+</html>
