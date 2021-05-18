@@ -47,6 +47,10 @@ i:hover{
     border-radius: 50%;
 }
 
+.circle:hover{
+    cursor: pointer;
+}
+
 .white{
     background-color: white;
 }

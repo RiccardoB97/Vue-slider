@@ -31,5 +31,6 @@ const app = new Vue({
             }
             return this.counter -= 1, this.position = ' first active';
         },
+
     }
 })
