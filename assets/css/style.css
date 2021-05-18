@@ -29,10 +29,26 @@ i:hover{
 #bar{
     height: 50px;
     width:250px;
-    background-color: gray;
+    background-color: rgba(181, 179, 179, 0.537);
     position: absolute;
     bottom: 20px;
     margin: 0 20px;
     left: 50%;
-    transform: translate(-50%,-50%)
+    transform: translate(-50%,-50%);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+
+.blue{
+    background-color: blue;
 }

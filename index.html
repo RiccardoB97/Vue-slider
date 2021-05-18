@@ -16,7 +16,9 @@
         <div class="prev" @click="showPrev"><i class="fas fa-chevron-left"></i></div>
         <div class="slider">
             <img :src="images[counter]" :class="position" alt="">
-            <div id="bar"></div>
+            <div id="bar">
+                <div v-for="circle in images" class="circle"></div>
+            </div>
         </div>
         <div class="next" @click="showNext"><i class="fas fa-chevron-right"></i></div>
     </div>
