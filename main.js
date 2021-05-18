@@ -13,13 +13,18 @@ const app = new Vue({
 
     methods: {
         showNext() {
+            // Shows next picture
             if (this.counter === this.images.length - 1) {
-                this.counter = 0;
+                return this.counter = 0;
             }
             return this.counter += 1;
         },
         showPrev() {
             // Shows previous picture
+            if (this.counter === 0) {
+                return this.counter = this.images.length - 1
+            }
+            return this.counter -= 1;
         }
     }
 })
