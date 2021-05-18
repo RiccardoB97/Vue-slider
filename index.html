@@ -17,7 +17,7 @@
         <div class="slider">
             <img :src="images[counter]" :class="position" alt="">
             <div id="bar">
-                <div v-for="circle in images" class="circle"></div>
+                <div v-for='circle in images.length' class="circle white"></div>
             </div>
         </div>
         <div class="next" @click="showNext"><i class="fas fa-chevron-right"></i></div>
