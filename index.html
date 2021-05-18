@@ -14,7 +14,10 @@
 <body>
     <div id="app">
         <div class="prev" @click="showPrev"><i class="fas fa-chevron-left"></i></div>
-        <img :src="images[counter]" alt="">
+        <div class="slider">
+            <img :src="images[counter]" :class="position" alt="">
+            <div id="bar"></div>
+        </div>
         <div class="next" @click="showNext"><i class="fas fa-chevron-right"></i></div>
     </div>
 
